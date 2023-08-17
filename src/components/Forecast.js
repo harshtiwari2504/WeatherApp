@@ -19,7 +19,7 @@ function Forecast (){
         })
 
 
-    },[data.coord.lat , data.coord.lon])
+    },)
 
 
     return (
@@ -31,7 +31,7 @@ function Forecast (){
 <div className="grid grid-cols-4  w-full p-2 md:w-[80%] gap-2  md:grid-cols-8 ">
  {
         forcastData.map(item => (
-            <div className="shadow-lg shadow-slate-300 flex flex-col text-sm md:text-lg p-1 rounded-md justify-center text-center items-center border">
+            <div className="shadow-lg shadow-slate-100 flex flex-col text-sm md:text-md p-1 rounded-md justify-center text-center items-center border">
                 <p>{item.dt_txt.split(" ")[0]}</p>
                 <p>{item.dt_txt.split(" ")[1]}</p>
                 <img src={`https://openweathermap.org/img/wn/${item.weather[0].icon}@2x.png`} alt="forcast-icon" />
