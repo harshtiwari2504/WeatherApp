@@ -3,7 +3,7 @@ function TopBar({cityStateChanger}){
         {title:"Delhi" ,id:1},
         {title:"Mumbai",id:2 },
         {title:"Bangalore",id:3},
-        {title:"Ahemdabad",id:4},
+        {title:"Jaipur",id:4},
         {title:"kolkata", id:5}
     ]
 
